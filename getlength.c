@@ -19,7 +19,7 @@ void main(void)
 	char arr[100];
 	int len;
 	printf("Enter a string: ");
-	scanf("%s\n",%str);
+	scanf("%s\n",$str);
 	len = getLength(str);
 	printf("%d\n", len);
 	
