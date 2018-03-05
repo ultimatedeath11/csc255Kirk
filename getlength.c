@@ -1,5 +1,6 @@
 
 #define _CRT_SECURE_NO_WARNIGNS
+#include <stdio.h>
 
 int getLength(char str[])
 {
