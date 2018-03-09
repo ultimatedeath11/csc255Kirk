@@ -6,12 +6,11 @@
 
 #define SIZE 10
 
-void intprintchars(char [],int);
+void printchars(char [],int);
 void randomCharacters(char [], int);
 
 void main(void)
 {
-	//pointers are defined with int *name
 	int size =10;	
 	static char arr1[10];	
 	srand(time(NULL));
@@ -19,7 +18,7 @@ void main(void)
 	printchars(arr1,size);
 }
 
-void printchars(char toPrint[],SIZE)
+void printchars(char toPrint[],size)
 { 
  
 	int i;
@@ -32,7 +31,7 @@ void printchars(char toPrint[],SIZE)
 }
 
 
-void randomCharacters(char hi[], SIZE)
+void randomCharacters(char hi[], int size)
 { 
 
 	int i;
