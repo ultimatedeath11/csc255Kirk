@@ -14,15 +14,15 @@ void main(void)
 	int size =10;	
 	static char arr1[10];	
 	srand(time(NULL));
-	randomCharacters(arr1,size);
-	printchars(arr1,size);
+	randomCharacters(arr1,SIZE);
+	printchars(arr1,SIZE);
 }
 
-void printchars(char toPrint[],size)
+void printchars(char toPrint[],int size)
 { 
  
 	int i;
-	for(i = 0; i < i ;i++)
+	for(i = 0; i < size ;i++)
 	{
 		printf("%c\n",toPrint[i]);
 
@@ -35,10 +35,10 @@ void randomCharacters(char hi[], int size)
 { 
 
 	int i;
-	for(i = 0; i < SIZE ;i++)
+	for(i = 0; i < size ;i++)
 	{ 
 
-	hi[i] = 'a' + rand() % 26;
+		hi[i] = 'a' + rand() % 26;
 	
 	}
 
