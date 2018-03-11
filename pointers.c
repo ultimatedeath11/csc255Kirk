@@ -8,6 +8,8 @@
 
 void printchars(char [],int);
 void randomCharacters(char [], int);
+void isConsinant(char , int);
+void isVowel(char, int);
 
 void main(void)
 {
