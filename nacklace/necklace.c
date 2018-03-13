@@ -8,7 +8,7 @@ int findMaxBeads(char arr[], int size)
 	int ccount = 0; 	//count though the while loops
 	char cvalue;		//the character that I am looking at
 	int g = 0;
-
+	int h = 0;
 	for(i = 0; i < size ;i++){
 		if(arr[head] == 'w')
 		{ 
@@ -39,7 +39,7 @@ int findMaxBeads(char arr[], int size)
 			g = 0;
 
 		}
-		if(arr[head] == 'b')
+		if(arr[head] == 'b') // double check for if the tail is r
 		{ 
 			cvalue = 'b';
 			ccount = 0;
@@ -80,7 +80,45 @@ int findMaxBeads(char arr[], int size)
 
 			}
 			//
-				//something goes in here 
+			h = g;
+			while(cvalue == arr[head + g])
+			{ 
+
+				ccount ++;
+				h++;
+				cvalue = arr[head + h];
+
+			}
+			//
+			if (currentMax < ccount)
+			{ 
+
+				currentMax = ccount;
+
+			}
+		}
+		if(arr[tail] == 'r')
+		{ 
+			cvalue = 'r';
+			g = 0;
+			while(cvalue != 'r')
+			{ 
+
+				ccount ++; 
+				g++;
+				cvalue = arr[tail + g];
+
+			}
+			//
+			h = g;
+			while(cvalue == arr[tail + g])
+			{ 
+
+				ccount ++;
+				h++;
+				cvalue = arr[tail + h];
+
+			}
 			//
 			if (currentMax < ccount)
 			{ 
