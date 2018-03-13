@@ -9,10 +9,8 @@
 void printchars(char [],int);
 void randomCharacters(char [], int);
 void isConsinant(char , int);
-void isVowel(char, int);
 
-void main(void)
-{
+void isVowel(char, int); void main(void) {
 	int size =10;	
 	static char arr1[10];	
 	srand(time(NULL));
@@ -45,7 +43,5 @@ void randomCharacters(char hi[], int size)
 	}
 
 }
-
-
 
 
