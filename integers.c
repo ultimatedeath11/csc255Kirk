@@ -24,5 +24,7 @@ void main(void)
 	{
  		printf("Float #%d = %.2f\n", i+1, myArray[i]);
 	}
+	
+	
 
 }
